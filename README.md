@@ -1,5 +1,5 @@
 # CommonAssignmentOpenMP
-Provide a parallel version of the Tarjan's algorithm to find Strongly Connected Components in a Graph. The implementation MUST use a message passing paradigm, and has to be implemented by using MPI. Students MUST store and load the input graph FROM FILES. The whole graph MUST be distributed on files on each node (i.e.: the whole graph cannot be stored on a single (even replicated) file). Good Graph dimensions are greater than 4GB of data. Students have to choose the proper data structure to represent the graph in memory.
+Provide a parallell version of the Tarjan's algorithm to find Strongly Connected Components in a Graph. The implementation MUST use an hibrid  message passing / shared memory paradigm. and has to be implemented by using MPI and openMP.  Students MUST provide parallel processes on different nodes, and each process has to be parallelized by using Open MP (i.e.: MPI will spawn OPENMP-compiled processes). Students can choose the graph allocation method the prefer. They can eventually produce the graph directly in distributed memory (without store anything). Good Graph dimensions are greater than 4GB of data
 
 ## Dependencies
 
